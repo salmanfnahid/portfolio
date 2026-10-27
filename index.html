@@ -47,8 +47,9 @@
             top: 0;
             z-index: 10;
             background: rgba(11, 17, 32, 0.94);
-            border-bottom: 1px solid var(--border);
+            border-bottom: none;
             backdrop-filter: blur(12px);
+            padding: 12px 0;
         }
 
         nav {
@@ -57,6 +58,11 @@
             justify-content: space-between;
             align-items: center;
             gap: 20px;
+            border: 1.5px solid #facc15;
+            border-radius: 14px;
+            padding: 0 22px;
+            background: rgba(18, 28, 48, 0.72);
+            box-shadow: 0 0 18px rgba(250, 204, 21, 0.08);
         }
 
         .logo {
@@ -313,7 +319,8 @@
         @media (max-width: 760px) {
             nav {
                 flex-direction: column;
-                padding: 16px 0;
+                padding: 16px 12px;
+                gap: 12px;
             }
 
             .nav-links {
